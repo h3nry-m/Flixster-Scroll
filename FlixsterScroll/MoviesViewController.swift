@@ -54,11 +54,13 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
             
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell // if cell is off screen, take it to a recycle cell
         let movie = movies[indexPath.row]
         let title = movie["title"] as! String // casting it as a string
+        let synopsis = movie["overview"] as! String
         
-        cell.textLabel!.text = title
+        cell.titleLabel!.text = title
+        cell.synopsisLabel!.text = synopsis
         
         return cell
     }
