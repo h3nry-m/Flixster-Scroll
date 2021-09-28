@@ -16,7 +16,7 @@ Flixster Scroll is an app that allows users to browse movies from the [The Movie
 - [ ] (1pt) Run your app on a real device.
 
 ### App Walkthrough GIF
-![Flixster Scroll Gif](http://g.recordit.co/x1pNYP6TY7.gif)
+![Flixster Scroll Gif](http://g.recordit.co/YzJezKYAef.gif)
 
 ### Notes
 Learning about cocoapods and alamofireimage was interesting.
